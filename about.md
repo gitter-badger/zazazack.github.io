@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, I'm Zack. I'm an amateur developer and professonal procrastinator. This is my development blog where I go to procrastinate.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+This site is hosted by [GitHub Pages](https://pages.github.com) and powered by [Jekyll](http://jekyllrb.com/).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for this site at:
+{% include icon-github.html username="zazazack" %} /
+[zazazack.github.io](https://github.com/zazazack/zazazack.github.io)
+
+<!-- Feel free to contact me about anything (somebody, please, talk to me). -->
