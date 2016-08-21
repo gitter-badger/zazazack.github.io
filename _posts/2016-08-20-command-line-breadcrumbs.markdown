@@ -2,9 +2,7 @@
 layout: post
 title:  "Command-line Breadcrumbs"
 date:   2016-08-20 16:11:59 -0500
-categories:
-    - productivity
-    - organization
+categories: productivity
 tags:
     - command-line
     - cli
