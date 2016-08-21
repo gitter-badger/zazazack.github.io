@@ -1,6 +1,7 @@
 ---
     layout: post
     title: "Use GitHub Pages to learn git, GitHub, Markdown, and Jekyll"
+    date: 2016-08-21 11:46 -0500
     categories:
         - development
     tags:
