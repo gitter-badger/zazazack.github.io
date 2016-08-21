@@ -3,6 +3,9 @@
     title: "Use GitHub Pages to learn git, GitHub, Markdown, and Jekyll"
     categories:
         - development
+    tags:
+        - intermediate
+        - web development
 ---
 
 <!-- I'm not a developer, I'm not anything really, but I have a strong desire to optimize my life via modern tech. I'm not really good enough at programming to make any money off of my knowledge, but I love to learn about it and I typically know enough to see that foo application has value in the world of development. A few years ago, my boss asked me to develop a document control system for his department. While reasearching DCS's I came across GitHub and immediately saw its value. Since I'm not a "real programmer", I hand't found much use for it, but I recently started doing some web development and checked to see if there was any way incorporate `git` (and GitHub) into my process. The web development I started doing was using WordPress. I immediately realized that I could use GitHub to find custom modules which led me to think bigger and find alternatives to WordPress itself. During that investigation, I came across 'GitHub Pages'.  -->
