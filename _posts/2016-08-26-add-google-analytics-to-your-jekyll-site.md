@@ -42,7 +42,7 @@ Here's what to do:
 
     ![](https://www.dropbox.com/s/r1qjeuoo71dzacf/Screenshot%202016-08-25%2021.44.51.png?dl=1)
 
-5. Under `{ % include head.html % }` paste the following line:
+5. Under ![](https://www.dropbox.com/s/n8eggknjbg3zv2l/Screenshot%202016-08-26%2009.42.17.png?dl=1) paste the following line:
 
     ![](https://www.dropbox.com/s/35dy13atkx6ggo0/Screenshot%202016-08-26%2001.46.07.png?dl=1)
 

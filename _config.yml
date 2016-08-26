@@ -17,3 +17,9 @@ github_username:  zazazack
 
 # Build settings
 markdown: kramdown
+
+# Plugins
+gem:
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-archives
