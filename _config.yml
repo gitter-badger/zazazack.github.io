@@ -19,7 +19,7 @@ github_username:  zazazack
 markdown: kramdown
 
 # Plugins
-gem:
+gems:
     - jekyll-feed
     - jekyll-seo-tag
     - jekyll-archives
