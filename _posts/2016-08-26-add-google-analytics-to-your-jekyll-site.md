@@ -42,7 +42,7 @@ Open `username.github.io/_layouts/default.html`
 
 ![](https://www.dropbox.com/s/r1qjeuoo71dzacf/Screenshot%202016-08-25%2021.44.51.png?dl=1)
 
-Under `{% raw %}{% include analytics.html %}{% endraw %}` paste the following line:
+Under `{% raw %}{% include head.html %}{% endraw %}` paste the following line:
 
 ![](https://www.dropbox.com/s/35dy13atkx6ggo0/Screenshot%202016-08-26%2001.46.07.png?dl=1)
 
