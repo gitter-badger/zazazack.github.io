@@ -21,5 +21,15 @@ markdown: kramdown
 # Plugins
 gems:
     - jekyll-feed
-    - jekyll-seo-tag
+    - jekyll-seo-tag    # see {% seo %} tag in _layouts/defautl.html
     - jekyll-archives
+
+# Defaults
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            author: "Zack Wilson"
+            comments: true
