@@ -29,7 +29,15 @@ defaults:
     -
         scope:
             path: ""
+            type: "pages"
+        values:
+            analytics: true     # google analytics ref _includes/analytics.html
+    -
+        scope:
+            path: ""
             type: "posts"
         values:
+            analytics: true     # google analytics ref _includes/analytics.html
             author: "Zack Wilson"
+            categories: uncategorized
             comments: true
