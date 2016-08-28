@@ -15,9 +15,9 @@ If you've [set up a Jekyll site via GitHub Pages](https://zazazack.github.io/dev
 
 Here's what to do:
 
-1. Copy your [Google Analytics tracking code](https://support.google.com/analytics/answer/1008080))
+Copy your [Google Analytics tracking code](https://support.google.com/analytics/answer/1008080))
 
-{% highlight html %}
+```html
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,31 +28,31 @@ Here's what to do:
   ga('send', 'pageview');
 
 </script>
-{% endhighlight %}
+```
 
-2. Paste your tracking code into a file and name it `analytics.html`
+Paste your tracking code into a file and name it `analytics.html`
 
-    ![](https://www.dropbox.com/s/4g34c8fbtnda3nx/Screenshot%202016-08-26%2001.31.37.png?dl=1)
+![](https://www.dropbox.com/s/4g34c8fbtnda3nx/Screenshot%202016-08-26%2001.31.37.png?dl=1)
 
-3. Place `analytics.html` in your `username.github.io/_includes` file.
+Place `analytics.html` in your `username.github.io/_includes` file.
 
-    ![](https://www.dropbox.com/s/elv7c74qra3a2ef/Screenshot%202016-08-25%2021.43.42.png?dl=1)
+![](https://www.dropbox.com/s/elv7c74qra3a2ef/Screenshot%202016-08-25%2021.43.42.png?dl=1)
 
-4. Open `username.github.io/_layouts/default.html`
+Open `username.github.io/_layouts/default.html`
 
-    ![](https://www.dropbox.com/s/r1qjeuoo71dzacf/Screenshot%202016-08-25%2021.44.51.png?dl=1)
+![](https://www.dropbox.com/s/r1qjeuoo71dzacf/Screenshot%202016-08-25%2021.44.51.png?dl=1)
 
-5. Under ![](https://www.dropbox.com/s/n8eggknjbg3zv2l/Screenshot%202016-08-26%2009.42.17.png?dl=1) paste the following line:
+Under `{% raw %}{% include analytics.html %}{% endraw %}` paste the following line:
 
-    ![](https://www.dropbox.com/s/35dy13atkx6ggo0/Screenshot%202016-08-26%2001.46.07.png?dl=1)
+![](https://www.dropbox.com/s/35dy13atkx6ggo0/Screenshot%202016-08-26%2001.46.07.png?dl=1)
 
-6. Don't forget to commit and push your changes to github so you can view them on your site.
+Don't forget to commit and push your changes to github so you can view them on your site.
 
-{% highlight bash linenos %}
+```bash
 $ cd /foo/bar/username.github.io/
 $ git add .
 $ git commit -m "added ga-tracking code to enable Google-Analytics"
 $ git push
-{% endhighlight %}
+```
 
 Now [confirm analytics is running](https://support.google.com/analytics/answer/1008083?hl=en) and enjoy the beautiful data!
