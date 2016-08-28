@@ -76,4 +76,6 @@ Click **Create Recipe** (you can modify pretty much every option you've just sel
 
 That's it, you're done! Next time you publish a post, it will be automatically tweeted from your Twitter account!
 
+![](https://www.dropbox.com/s/fnaj9u3cgkb13tp/Screenshot%202016-08-28%2014.47.54.png?dl=1)
+
 [^feedUrl]: Make sure to copy the link from your live site (i.e. not a locally served url like `127.0.0.1/foo`).
