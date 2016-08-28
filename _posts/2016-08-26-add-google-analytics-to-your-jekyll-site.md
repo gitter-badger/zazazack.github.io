@@ -7,52 +7,85 @@
     tags:
         - marketing
         - development
+        - analytics
+        - blogs
 ---
 
-<!-- Don't forget obscure any sensitive info in these screenshots!!! -->
+If you've [set up a Jekyll site via GitHub Pages](https://zazazack.github.io/development/2016/08/21/gh-pages+jekyll.html) it's pretty easy to add Google Analytics to your site. Analytics is a "free" service from Google and can help you improve the usefulness of your site with insight into user behavior.
 
-If you've [set up a Jekyll site via GitHub Pages](https://zazazack.github.io/development/2016/08/21/gh-pages+jekyll.html) it's pretty easy to add Google Analytics to your site. All you need is is a [Google Analytics account](https://support.google.com/analytics/answer/1008015?hl=en).
+![Google Analytics](https://www.dropbox.com/s/6ou9tpmbtn43w1e/Screenshot%202016-08-28%2010.34.54.png?dl=1)
 
-Here's what to do:
+# Prerequisites
 
-Copy your [Google Analytics tracking code](https://support.google.com/analytics/answer/1008080))
+* [Jekyll/GitHub Pages Site](https://zazazack.github.io/development/2016/08/21/gh-pages+jekyll.html)
+* [Tracking code for your Google Analytics property](https://support.google.com/analytics/answer/1008015?hl=en&ref_topic=3544906)
 
-```html
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+# Implementation
 
-  ga('create', 'YOUR-TRACKING-ID-HERE', 'auto');
-  ga('send', 'pageview');
-
-</script>
-```
-
-Paste your tracking code into a file and name it `analytics.html`
-
-![](https://www.dropbox.com/s/4g34c8fbtnda3nx/Screenshot%202016-08-26%2001.31.37.png?dl=1)
-
-Place `analytics.html` in your `username.github.io/_includes` file.
-
-![](https://www.dropbox.com/s/elv7c74qra3a2ef/Screenshot%202016-08-25%2021.43.42.png?dl=1)
-
-Open `username.github.io/_layouts/default.html`
-
-![](https://www.dropbox.com/s/r1qjeuoo71dzacf/Screenshot%202016-08-25%2021.44.51.png?dl=1)
-
-Under `{% raw %}{% include head.html %}{% endraw %}` paste the following line:
-
-![](https://www.dropbox.com/s/35dy13atkx6ggo0/Screenshot%202016-08-26%2001.46.07.png?dl=1)
-
-Don't forget to commit and push your changes to github so you can view them on your site.
+Open terminal and change to your site's root directory, e.g.
 
 ```bash
-$ cd /foo/bar/username.github.io/
+$ cd ~/path/to/your/site/username.github.io/
+```
+
+Open `_layouts/default.html` in your favorite text editor, e.g.
+
+```bash
+$ nano _layouts/default.html
+```
+
+Under `{% raw %}{% include head.html %}{% endraw %}` add the following line:
+
+```liquid
+{% raw %}{% include analytics.html %}{% endraw %}
+```
+
+![`default.html`](https://www.dropbox.com/s/xs8xgprlsldchij/Screenshot%202016-08-28%2011.12.04.png?dl=1)
+
+Visit <https://analytics.google.com> and copy your [Google Analytics tracking code](https://support.google.com/analytics/answer/1032385?hl=en)
+
+![](https://www.dropbox.com/s/x1ktjcx0qkvy10e/Screenshot%202016-08-28%2010.48.54.png?dl=1)
+
+Create a new file in `_includes/`, paste your tracking code in it and save it as `analytics.html`, e.g.
+
+```bash
+$ nano _includes/analytics.html
+```
+
+![`analytics.html`](https://www.dropbox.com/s/jy0kbduqrdjlh3a/Screenshot%202016-08-28%2011.15.46.png?dl=1)
+
+# Test
+
+Verify that your site is working locally
+
+```bash
+$ bundle exec jekyll serve
+```
+
+Copy the `Server Address`, e.g.
+
+```bash
+JekyllAdmin mode: production
+  Server address: http://127.0.0.1:4000/    # open in your browser to view your site locally
+Server running... press ctrl-c to stop.
+```
+
+While you're viewing your site, open your web inspector to view the page as source and check to see if the tracking code is visible
+
+You should see the contents of `analytics.html` after the closing `</head>` tag, e.g.
+
+![View your site pages' source to verify that your ga-analytics script is included ](https://www.dropbox.com/s/0m0kaj7eqkw7pit/Screenshot%202016-08-28%2011.55.38.png?dl=1)
+
+Check that you see this code on all (or at least _some_ of) your site's pages.
+
+# Deploy
+
+If everything looks good, commit and push your changes to github so you can view them on your site
+
+```bash
 $ git add .
 $ git commit -m "added ga-tracking code to enable Google-Analytics"
 $ git push
 ```
 
-Now [confirm analytics is running](https://support.google.com/analytics/answer/1008083?hl=en) and enjoy the beautiful data!
+Finally, [confirm analytics is running](https://support.google.com/analytics/answer/1008083?hl=en) on the live site and enjoy the beautiful data!
