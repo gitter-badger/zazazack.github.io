@@ -1,7 +1,7 @@
 {% comment %}
     Google Analytics Tracking Code
     Configure default behavior in `_config.yml`
-    Default is `analytics: true` (i.e. global)
+    Default is `analytics: true` for `type: pages` and `type: posts`, `analytics: false` for drafts
     Toggle per layout in frontmatter with `analytics: false`
 {% endcomment %}
 {% if page.analytics %}
@@ -9,10 +9,7 @@
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-82894812-1', 'auto');
+@@ -8,3 +16,5 @@
   ga('send', 'pageview');
 
 </script>
