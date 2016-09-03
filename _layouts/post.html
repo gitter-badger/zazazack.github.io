@@ -12,6 +12,11 @@ layout: default
     {{ content }}
   </div>
 
-  {% include comments.html %}
+  {% comment %}
+  Only include comment forum on the live site
+  {% endcomment %}
+  {% if jekyll.environment != "development" %}
+    {% include comments.html %}
+  {% endif %}
 
 </article>
