@@ -1,0 +1,20 @@
+{% comment %}
+    # Google AdSense Code
+    Boolean: defaults to `ads: false`
+    Configure / layout type in `_config.yml`
+    Toggle in page or post frontmatter with `ads: true`
+{% endcomment %}
+{% if page.ads %}
+<!-- Begin Google AdSense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- zazazack.github.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7430173128417271"
+     data-ad-slot="6277311946"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- End Google AdSense -->
+{% endif %}
