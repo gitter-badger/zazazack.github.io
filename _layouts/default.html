@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
+  {% comment %}
+  Only include seo plugin on the live site
+  {% endcomment %}
+  {% if jekyll.environment != "development" %}
+    {% seo %}
+  {% endif %}
 
-  {% seo %}
   {% include head.html %}
-  {% include analytics.html %}
+
+  {% comment %}
+  Only track analytics on the live site
+  {% endcomment %}
+  {% if jekyll.environment != "development" %}
+    {% include analytics.html %}
+  {% endif %}
 
   <body>
+
+    {% comment %}
+    Only serve ads on the live site
+    {% endcomment %}
+    {% if jekyll.environment != "development" %}
+      {% include ads.html %}
+    {% endif %}
 
     {% include header.html %}
 

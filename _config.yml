@@ -37,6 +37,7 @@ defaults:
             path: ""
             type: "posts"
         values:
+            ads: true           # google adsense ref _includes/ads.html
             analytics: true     # google analytics ref _includes/analytics.html
             author: "Zack Wilson"
             comments: true
