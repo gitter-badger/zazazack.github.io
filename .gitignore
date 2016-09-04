@@ -2,9 +2,4 @@ _site
 _drafts
 .sass-cache
 .jekyll-metadata
-<<<<<<< HEAD
 .DS_Store
-=======
->>>>>>> parent of 9e88c5a... Merge pull request #19 from zazazack/git-config
-
-_posts/2016-08-31-installing-odoo-on-linux.markdown
