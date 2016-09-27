@@ -1,7 +1,7 @@
 {% comment %}
     Disqus Universal Embed Code
     Configure default behavior in `_config.yml`
-    Default is `comments: true` (i.e. all posts)
+    Default is `comments: true` for all posts, not pages
     Toggle per post in frontmatter with `comments: false`
 {% endcomment %}
 {% if page.comments %}
@@ -11,12 +11,13 @@
 /**
  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
-/*
+
 var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = '{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}';
+    this.page.identifier = '{{ page.id }}';
+    this.page.title = '{{ page.title }}';
 };
-*/
+
 (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
     s.src = '//zazazack-github-io.disqus.com/embed.js';
