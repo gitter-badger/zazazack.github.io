@@ -31,13 +31,13 @@ defaults:
             path: ""
             type: "pages"
         values:
-            analytics: true     # google analytics ref _includes/analytics.html
+            analytics: true     # google analytics ref _includes/analytics.html & _layouts/defaults.html
     -
         scope:
             path: ""
             type: "posts"
         values:
-            ads: true           # google adsense ref _includes/ads.html
-            analytics: true     # google analytics ref _includes/analytics.html
+            ads: true           # google adsense ref _includes/ads.html & _layouts/defaults.html
+            analytics: true     # google analytics ref _includes/analytics.html & _layouts/defaults.html
             author: "Zack Wilson"
             comments: true
