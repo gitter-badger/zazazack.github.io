@@ -40,4 +40,4 @@ defaults:
             ads: true           # google adsense ref _includes/ads.html & _layouts/defaults.html
             analytics: true     # google analytics ref _includes/analytics.html & _layouts/defaults.html
             author: "Zack Wilson"
-            comments: true
+            comments: true      # disqus comments ref _layouts/post.html & _includes comments.html
