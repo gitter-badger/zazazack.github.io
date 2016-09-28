@@ -9,7 +9,7 @@
         - web development
 ---
 
-![](https://www.dropbox.com/s/euwaoyujlatjekf/Screenshot%202016-08-29%2010.07.18.png?dl=1 "https://pages.github.com")
+![](/assets/Screenshot 2016-08-29 10.07.18.png "https://pages.github.com")
 
 Use **GitHub Pages** to quickly get yourself up and running with
 
